@@ -897,8 +897,8 @@ class User{
         srand(time(0));
         int m = rand()%10000 + 1;
         cout<<"Coming to the super market after three to four days"<<endl;
-        cout<<"Reaching the shopping mall in 10 seconds"<<endl;
-        sleep(10);
+        cout<<"Reaching the shopping mall in 4 seconds"<<endl;
+        sleep(4);
         system("cls");
         cout<<"The winner of this lucky draw is:"<<m<<endl;
         if (new_lucky_draw_no == m)
@@ -924,7 +924,7 @@ class User{
         if (d==1)
         {
             cout<<"Showing the discount:"<<endl;
-            sleep(5);
+            sleep(3);
             system("cls");
             redeem_code = rand()%10000 + 1;
             cout<<"Your coupon number is:"<<redeem_code<<endl;
@@ -1012,8 +1012,8 @@ class Account{
         b = (rand()%100) + 1;
         c = rand()%100 + 1;
         srand(time(0));
-        cout<<"Next step in 10 seconds!"<<endl;
-        sleep(10);
+        cout<<"Next step in 4 seconds!"<<endl;
+        sleep(4);
         system("cls");
         cout<<"Choose Your username:"<<endl;
         cout<<"1."<<first_name<<b<<" or "<<" 2."<<last_name<<c<<endl;
@@ -1088,16 +1088,16 @@ class delivery_on_app{
         a1.making_an_account();
         do
         {
-            cout<<"Opening the menu in 5 seconds now"<<endl;
-            sleep(5);
+            cout<<"Opening the menu in 3 seconds now"<<endl;
+            sleep(3);
             system("cls");
         cout<<"Which of the following department you want to choose?"<<endl;
         cout<<"1.Electronic Items\n2.Snacks Items\n3.Stationary Items\n0.Exit and show the Bill"<<endl;
         cin>>a;
         if (a==1)
         {
-            cout<<"Going to the next step in 5 seconds now"<<endl;
-            sleep(5);
+            cout<<"Going to the next step in 3 seconds now"<<endl;
+            sleep(3);
             system("cls");
             cout<<"Which product to choose?"<<endl;
             for (int i = 0; i < 3; i++)
@@ -1127,8 +1127,8 @@ class delivery_on_app{
             s2.electronic_products[b - 1].set_quantity(c);
         }
         else if(a==2){
-            cout<<"Going to the next step in 5 seconds now"<<endl;
-            sleep(5);
+            cout<<"Going to the next step in 3 seconds now"<<endl;
+            sleep(3);
             system("cls");
             cout<<"Which product to choose?"<<endl;
             for (int i = 0; i < 3; i++)
@@ -1158,8 +1158,8 @@ class delivery_on_app{
             s2.snacks_products[b - 1].set_quantity(c);
         }
         else if(a==3){
-            cout<<"Going to the next step in 5 seconds now"<<endl;
-            sleep(5);
+            cout<<"Going to the next step in 3 seconds now"<<endl;
+            sleep(3);
             system("cls");
             cout<<"Which product to choose?"<<endl;
             for (int i = 0; i < 3; i++)
@@ -1189,8 +1189,8 @@ class delivery_on_app{
             s2.stationary_products[b - 1].set_quantity(c);
         }
         else if(a==0){
-            cout<<"Showing the bill  in 5 seconds now"<<endl;
-            sleep(5);
+            cout<<"Showing the bill  in 2 seconds now"<<endl;
+            sleep(2);
             system("cls");
             u1.bill(0);
         }
@@ -1209,8 +1209,8 @@ class delivery_on_call{
         int a;
         int c = rand()%20 + 1;
         cout<<"Calling the ABC Supermarket!!"<<endl;
-        cout<<"Dialing in about 20 seconds"<<endl;
-        sleep(rand()%20 + 1);
+        cout<<"Dialing in about 10 seconds"<<endl;
+        sleep(rand()%10 + 1);
         system("cls");
         cout<<"Write the extension number like: for delivery call:"<<c<<endl;
         cout<<"Extension Number:";
@@ -1220,8 +1220,8 @@ class delivery_on_call{
             cout<<"Type again!"<<endl;
             cin>>a;
         }
-        cout<<"Dialing in again about 20 seconds"<<endl;
-        sleep(rand()%20 + 1);
+        cout<<"Dialing in again about 10 seconds"<<endl;
+        sleep(rand()%10 + 1);
         system("cls");
         if (a==c)
         {
@@ -1229,14 +1229,14 @@ class delivery_on_call{
             cout<<"Customer:I want to order some items."<<endl;
         do
         {
-            sleep(5);
+            sleep(2);
             system("cls");
         cout<<"Operator:Ok.Which of the following department you want to choose?"<<endl;
         cout<<"1.Electronic Items\n2.Snacks Items\n3.Stationary Items\n0.Exit and show the Bill"<<endl;
         cin>>a;
         if (a==1)
         {
-            sleep(5);
+            sleep(2);
             system("cls");
             cout<<"Customer: I want to choose electronic items department."<<endl;
             cout<<"Operator: Which product you want to choose? We have products like:"<<endl;
@@ -1250,7 +1250,7 @@ class delivery_on_call{
                 cout<<"Operator:You choose the the wrong product no.Please Say again!"<<endl;
                 cin>>b;
             }
-            sleep(5);
+            sleep(2);
             system("cls");
             cout<<"Customer:I want product "<<s2.electronic_products[b - 1].get_product_name()<<endl;
             cout << "Operator:The product price is:"<<s2.electronic_products[b - 1].get_product_price() << endl;
@@ -1261,7 +1261,7 @@ class delivery_on_call{
                 cout<<"Operator:We have don't have enough quantity of that item. Please say again!"<<endl;
                 cin>>c;
             }
-            sleep(5);
+            sleep(2);
             system("cls");
             cout<<"Customer: I want "<<c<<" "<<s2.electronic_products[b - 1].get_product_name()<<endl;
             a = s2.electronic_products[b - 1].get_product_id();
@@ -1270,7 +1270,7 @@ class delivery_on_call{
             u1.add_to_cart(a,f,f1,c);
             c = s2.electronic_products[b - 1].get_product_quantity() - c;
             s2.electronic_products[b - 1].set_quantity(c);
-            sleep(5);
+            sleep(2);
             system("cls");
             cout<<"Operator:Ok.Anything Else you want?(1 for Yes or 2 for No)"<<endl;
             cin>>a;
@@ -1282,7 +1282,7 @@ class delivery_on_call{
             }
         }
         else if(a==2){
-            sleep(5);
+            sleep(2);
             system("cls");
             cout<<"Customer:I want to choose snacks items department."<<endl;
             cout<<"Operator:Which product to choose? We have products like:"<<endl;
@@ -1296,7 +1296,7 @@ class delivery_on_call{
                 cout<<"Operator:You choose the the wrong product no.Please Say again!"<<endl;
                 cin>>b;
             }
-            sleep(5);
+            sleep(2);
             system("cls");
             cout<<"Customer:I want product "<<s2.snacks_products[b - 1].get_product_name()<<endl;
             cout << "Operator:The product price is:"<<s2.snacks_products[b - 1].get_product_price() << endl;
@@ -1307,7 +1307,7 @@ class delivery_on_call{
                 cout<<"Operator:We have don't have enough quantity of that item. Please say again!"<<endl;
                 cin>>c;
             }
-            sleep(5);
+            sleep(2);
             system("cls");
             cout<<"Customer: I want "<<c<<" "<<s2.snacks_products[b - 1].get_product_name()<<endl;
             a = s2.snacks_products[b - 1].get_product_id();
@@ -1316,7 +1316,7 @@ class delivery_on_call{
             u1.add_to_cart(a,f,f1,c);
             c = s2.snacks_products[b - 1].get_product_quantity() - c;
             s2.snacks_products[b - 1].set_quantity(c);
-            sleep(5);
+            sleep(2);
             system("cls");
             cout<<"Operator:OK.Anything Else you want?(1 for Yes or 2 for No)"<<endl;
             cin>>a;
@@ -1328,7 +1328,7 @@ class delivery_on_call{
             }
         }
         else if(a==3){
-            sleep(5);
+            sleep(2);
             system("cls");
             cout<<"Customer:I want to choose stationary items department."<<endl;
             cout<<"Operator:Which product to choose? We have products like:"<<endl;
@@ -1342,7 +1342,7 @@ class delivery_on_call{
                 cout<<"Operator:You choose the the wrong product no.Please Say again!"<<endl;
                 cin>>b;
             }
-            sleep(5);
+            sleep(2);
             system("cls");
             cout<<"Customer:I want product "<<s2.stationary_products[b - 1].get_product_name()<<endl;
             cout << "Operator:The product price is:"<<s2.stationary_products[b - 1].get_product_price() << endl;
@@ -1353,7 +1353,7 @@ class delivery_on_call{
                 cout<<"Operator:We have don't have enough quantity of that item. Please say again!"<<endl;
                 cin>>c;
             }
-            sleep(5);
+            sleep(2);
             system("cls");
             cout<<"Customer: I want "<<c<<" "<<s2.stationary_products[b - 1].get_product_name()<<endl;
             a = s2.stationary_products[b - 1].get_product_id();
@@ -1362,7 +1362,7 @@ class delivery_on_call{
             u1.add_to_cart(a,f,f1,c);
             c = s2.stationary_products[b - 1].get_product_quantity() - c;
             s2.stationary_products[b - 1].set_quantity(c);
-            sleep(5);
+            sleep(2);
             system("cls");
             cout<<"Operator:OK.Anything Else you want?(1 for Yes or 2 for No)"<<endl;
             cin>>a;
@@ -1375,7 +1375,7 @@ class delivery_on_call{
         }
         else if(a==0){
             cout<<"Operator:OK. Thanks for calling ABC SuperMarket."<<endl;
-            sleep(5);
+            sleep(2);
             system("cls");
             u1.bill(1);
         }
@@ -1395,7 +1395,7 @@ class Manual{
         cout<<"Reaching in 5 seconds now"<<endl;
         do
         {
-        sleep(5);
+        sleep(2);
         system("cls");
         cout<<"Which department should I go first?"<<endl;
         cout<<"1.Electronic Items\n2.Snacks Items\n3.Stationary Items\n0.Exit and show the Bill"<<endl;
@@ -1404,7 +1404,7 @@ class Manual{
         {
             cout<<"I think I will go to electronic items department which is in the first floor."<<endl;
             cout<<"Reaching in 5 seconds now"<<endl;
-            sleep(5);
+            sleep(2);
             system("cls");
             cout<<"Which product should I buy from this department?Items like:"<<endl;
             for (int i = 0; i < 3; i++)
@@ -1417,7 +1417,7 @@ class Manual{
                 cout<<"Need to think another item as it is not available."<<endl;
                 cin>>b;
             }
-            sleep(5);
+            sleep(2);
             system("cls");
             cout<<"I will buy product "<<s2.electronic_products[b - 1].get_product_name()<<endl;
             cout<<"How much should I need(quantity)?"<<endl;
@@ -1427,7 +1427,7 @@ class Manual{
                 cout<<"Don't have much quantity I guess."<<endl;
                 cin>>c;
             }
-            sleep(5);
+            sleep(2);
             system("cls");
             cout<<"I will buy "<<c<<" "<<s2.electronic_products[b - 1].get_product_name()<<" which is "<<s2.electronic_products[b - 1].get_product_price()<<" per one quantity"<<endl;
             a = s2.electronic_products[b - 1].get_product_id();
@@ -1439,8 +1439,8 @@ class Manual{
         }
         else if(a==2){
             cout<<"I think I will go to snacks items department which is in the second floor."<<endl;
-            cout<<"Reaching in 5 seconds now"<<endl;
-            sleep(5);
+            cout<<"Reaching in 3 seconds now"<<endl;
+            sleep(3);
             system("cls");
             cout<<"Which product should I buy from this department?Items like:"<<endl;
             for (int i = 0; i < 3; i++)
@@ -1453,7 +1453,7 @@ class Manual{
                 cout<<"Need to think another item as it is not available."<<endl;
                 cin>>b;
             }
-            sleep(5);
+            sleep(2);
             system("cls");
             cout<<"I will buy "<<s2.snacks_products[b - 1].get_product_name()<<endl;
             cout<<"How much should I need(quantity)?"<<endl;
@@ -1463,7 +1463,7 @@ class Manual{
                 cout<<"Don't have much quantity I guess."<<endl;
                 cin>>c;
             }
-            sleep(5);
+            sleep(2);
             system("cls");
             cout<<"I will buy "<<c<<" "<<s2.snacks_products[b - 1].get_product_name()<<" which is "<<s2.snacks_products[b - 1].get_product_price()<<" per one quantity"<<endl;
             a = s2.snacks_products[b - 1].get_product_id();
@@ -1476,7 +1476,7 @@ class Manual{
         else if(a==3){
             cout<<"I think I will go to stationary items department which is in the third floor."<<endl;
             cout<<"Reaching in 5 seconds now"<<endl;
-            sleep(5);
+            sleep(2);
             system("cls");
             cout<<"Which product should I buy from this department?Items like:"<<endl;
             for (int i = 0; i < 3; i++)
@@ -1489,7 +1489,7 @@ class Manual{
                 cout<<"Need to think another item as it is not available."<<endl;
                 cin>>b;
             }
-            sleep(5);
+            sleep(2);
             system("cls");
             cout<<"I will buy "<<s2.stationary_products[b - 1].get_product_name()<<endl;
             cout<<"How much should I need(quantity)?"<<endl;
@@ -1499,7 +1499,7 @@ class Manual{
                 cout<<"Don't have much quantity I guess."<<endl;
                 cin>>c;
             }
-            sleep(5);
+            sleep(2);
             system("cls");
             cout<<"I will buy "<<c<<" "<<s2.stationary_products[b - 1].get_product_name()<<" which is "<<s2.stationary_products[b - 1].get_product_price()<<" per one quantity"<<endl;
             a = s2.stationary_products[b - 1].get_product_id();
@@ -1510,8 +1510,8 @@ class Manual{
             s2.stationary_products[b - 1].set_quantity(c);
         }
         else if(a==0){
-            cout<<"Showing the bill  in 5 seconds now"<<endl;
-            sleep(5);
+            cout<<"Showing the bill in 2 seconds now"<<endl;
+            sleep(2);
             system("cls");
             u1.bill(2);
         }
@@ -1531,8 +1531,8 @@ void User<t,t1,t2>::select_option(){
                 cout<<"Wrong Option!Try Again"<<endl;
             }
         } while (x>3);
-        cout<<"Going to next steps in 5 seconds"<<endl;
-        sleep(5);
+        cout<<"Going to next steps in 2 seconds"<<endl;
+        sleep(2);
         system("cls");
         if (x==1)
         {
