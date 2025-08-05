@@ -30,9 +30,9 @@ This is a **C++ Object-Oriented Programming (OOP)** based console project simula
    ```bash
    git clone https://github.com/TahaCoder563/SuperMarket-Management-System-OOP-Project.git
    cd SuperMarket-Management-System-OOP-Project
-2. Compile the project:
+2. **Compile the project:**
    ```bash
    g++ -o supermarket main.cpp
-3. Run the executable:
+3. **Run the executable:**
    ```bash
    ./supermarket
