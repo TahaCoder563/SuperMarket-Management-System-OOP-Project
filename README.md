@@ -23,7 +23,6 @@ This is a **C++ Object-Oriented Programming (OOP)** based console project simula
 - Dynamic Memory Allocation
 - Menu-driven Interface
 
-
 ## ⚙️ How to Run
 
 1. **Clone the repository:**
@@ -36,3 +35,9 @@ This is a **C++ Object-Oriented Programming (OOP)** based console project simula
 3. **Run the executable:**
    ```bash
    ./supermarket
+
+## 👥 Team Members
+
+- Taha Ashraf  
+- Asad Jafri
+- Taha Raza
